@@ -1,16 +1,32 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet ,Linking} from 'react-native';
 
 const Footer = () => {
+    const openWebsite = (url) => {
+        console.log('Opening URL:', url);
+        Linking.openURL(url)
+        .catch(err => console.error('An error occurred', err));
+    };
+
   return (
     <View style={styles.footer}>
-      <TouchableOpacity style={styles.footerItem}>
+      <TouchableOpacity
+      onPress={() =>
+        openWebsite('https://www.linkedin.com/in/mohd-saif-134076141/')
+      }
+       style={styles.footerItem}>
         <Text style={styles.footerText}>Chats</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.footerItem}>
+      <TouchableOpacity
+      onPress={() =>
+        openWebsite('https://www.linkedin.com/in/mohd-saif-134076141/')
+      } style={styles.footerItem}>
         <Text style={styles.footerText}>Status</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.footerItem}>
+      <TouchableOpacity
+      onPress={() =>
+        openWebsite('https://www.linkedin.com/in/mohd-saif-134076141/')
+      } style={styles.footerItem}>
         <Text style={styles.footerText}>Calls</Text>
       </TouchableOpacity>
     </View>
@@ -30,10 +46,11 @@ const styles = StyleSheet.create({
   },
   footerItem: {
     alignItems: 'center',
+    
   },
   footerText: {
     fontSize: 16,
-    color: 'white',
+    color: '#cccccc',
     fontWeight:'bold'
   },
 });

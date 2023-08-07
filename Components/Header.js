@@ -84,9 +84,10 @@ const styles = StyleSheet.create({
 
     },
     title:{
-        color:'white',
+        color:'#cccccc',
         fontSize : 20,
         fontWeight :"bold",
+
     }
 
 });
