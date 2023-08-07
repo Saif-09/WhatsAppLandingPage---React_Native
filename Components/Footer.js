@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     borderTopWidth: 1,
     borderColor: '#ccc',
     paddingVertical: 10,
-    backgroundColor: '#075e54',
+    backgroundColor: '#111b21',
     height:50
   },
   footerItem: {

@@ -124,6 +124,7 @@ const styles = StyleSheet.create({
         borderBottomWidth: 1,
         borderColor: '#ccc',
         paddingVertical: 10,
+        backgroundColor:'#202c33'
       },
       image: {
         width: 50,
