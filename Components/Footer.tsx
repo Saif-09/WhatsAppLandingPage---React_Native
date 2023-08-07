@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet ,Linking} from 'react-native';
 
 const Footer = () => {
-    const openWebsite = (url) => {
+    const openWebsite = (url:string) => {
         console.log('Opening URL:', url);
         Linking.openURL(url)
         .catch(err => console.error('An error occurred', err));

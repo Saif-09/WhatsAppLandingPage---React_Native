@@ -2,8 +2,14 @@ import { StyleSheet, Text, View , ScrollView, FlatList, Image} from "react-nativ
 import React from "react";
 
 const ChatList = () => {
+  interface Contact {
+    uid: number;
+    name: string;
+    message: string;
+    imageUrl: string;
+  }
 
-    const contacts = [
+  const contacts: Contact[] = [
         {
           uid: 1,
           name: 'Mohd Saif',
@@ -78,7 +84,7 @@ const ChatList = () => {
           },
       ];
 
-    const renderItem = ({ item }) => {
+    const renderItem = ({ item }:{ item:Contact }) => {
         return (
             
 
